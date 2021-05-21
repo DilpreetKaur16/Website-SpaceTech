@@ -356,7 +356,7 @@ hr.line {
     line-height: 30px;
     font-family: 'Roboto Condensed';
     font-weight: 700;
-    letter-spacing: 1px;
+   
     font-size: 16px;
     padding: 0 30px 30px 30px;
     text-align: justify;
@@ -367,7 +367,7 @@ hr.line {
   .heading{
      background-color: #82a4dd;
     margin: 0px -30px 0px -30px;
-    padding-left: 50px;
+    padding-left: 25px;
 
     
   }

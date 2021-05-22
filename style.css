@@ -357,7 +357,7 @@ hr.line {
     background-color:rgb(232, 232, 243);
     height:100%;
     line-height: 35px;
-    font-family: 'Roboto Condensed';
+    font-family: 'KoHo', sans-serif;
     font-weight: 700;
     position: relative;
     font-size: 16px;
@@ -375,9 +375,9 @@ hr.line {
     
   }
 .figcaption{
-    width: 300px; line-height: 20px; font-size: 12px; text-align: justify; font-weight: 500;
+    width: 300px; line-height: 20px; font-size: 12px; text-align: justify; 
     padding: 0px 10px 0px 10px;
-    font-family: cursive;
+    font-family: 'Newsreader', serif;
     font-size: 14px;
 }
 

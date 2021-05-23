@@ -380,18 +380,26 @@ hr.line {
     font-family: 'Newsreader', serif;
     font-size: 14px;
 }
-
-.iframecontainer{
+/*
+iframecontainer{
     position: relative;
     width: 100%;
     height: 0;;
-    padding-bottom: 56.25%;
+  
 }
-.iframe-container iframe{
+iframecontainer iframe{
     position: absolute;
     width: 100%;
     height: 100%;
-}
+} 
 .c1{
     background-color:rgb(232, 232, 243); ;
+}
+*/
+
+@media(max-width:500px){
+    .iframecontainer iframe{
+        width:100% !important;
+        height: 200px !important;
+    }
 }

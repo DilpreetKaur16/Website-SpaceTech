@@ -215,6 +215,7 @@ input::placeholder {
     justify-content: start, end, center, stretch-default
  */
 }
+
 .img{
 position:relative;
 width:100%;
@@ -222,6 +223,7 @@ height:80%;
 display: flex;
 flex-wrap: wrap;
 }
+
 .para{
     line-height: 1.5;
     font-size: 1.2em;
@@ -370,7 +372,7 @@ hr.line {
   .heading{
      background-color: #82a4dd;
     margin: 0px -30px 0px -30px;
-    padding-left: 50px;
+    padding-left: 20px;
     
     
   }
@@ -380,6 +382,8 @@ hr.line {
     font-family: 'Newsreader', serif;
     font-size: 14px;
 }
+
+
 /*
 iframecontainer{
     position: relative;
@@ -397,10 +401,15 @@ iframecontainer iframe{
 }
 
 */
+
 @media(max-width:500px){
     .iframecontainer iframe{
         width:100% !important;
         height: 200px !important;
     }
+    .imgimp{
+        width:100% !important;
+        height: 200px !important;
+    }
+   
 }
-

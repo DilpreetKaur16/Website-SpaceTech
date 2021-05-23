@@ -370,7 +370,7 @@ hr.line {
   .heading{
      background-color: #82a4dd;
     margin: 0px -30px 0px -30px;
-    padding-left: 25px;
+    padding-left: 50px;
     
     
   }
@@ -395,11 +395,12 @@ iframecontainer iframe{
 .c1{
     background-color:rgb(232, 232, 243); ;
 }
-*/
 
+*/
 @media(max-width:500px){
     .iframecontainer iframe{
         width:100% !important;
         height: 200px !important;
     }
 }
+

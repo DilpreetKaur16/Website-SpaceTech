@@ -365,14 +365,25 @@ hr.line {
     font-size: 16px;
     padding: 0 30px 30px 30px;
     text-align: justify;
-    
+    /* display: flex;
+    flex-wrap: wrap;
+     max-width:100%;
+     grid-gap:12px;
+     margin:40px 
   }
-
-
+.desc{
+    border-radius: 50px;
+   background-color: whitesmoke;
+   width: 320px;
+   margin:20px;
+   padding: 25px;
+} */
+  }
   .heading{
      background-color: #82a4dd;
     margin: 0px -30px 0px -30px;
-    padding-left: 20px;
+    
+    padding:7px
     
     
   }
@@ -401,15 +412,21 @@ iframecontainer iframe{
 }
 
 */
+.respimg{
+width:100%;
+max-width:1500px;
+height:auto
+}
 
-@media(max-width:500px){
+
+@media (max-width:700px){
     .iframecontainer iframe{
         width:100% !important;
         height: 200px !important;
     }
     .imgimp{
         width:100% !important;
-        height: 200px !important;
+        height: 250px !important;
     }
    
 }

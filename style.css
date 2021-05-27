@@ -15,89 +15,272 @@ body {
     
 
   }
- .nav-area{
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin:1.5rem;
-       padding-top: 1rem;
- }
- .nav-area ul{
-     list-style: none;
-     margin:0;
-     padding:0;
-     display: flex;
-     flex-wrap: wrap;
-    
-     align-items: center;
-     justify-content: space-around;
- }
- .nav-area ul li{
-     
-     font-size: 1.2rem;
-     display: flex;
-     flex-wrap: wrap;
-     
- }
 
- .nav-area ul li > ul{
-     display: none;
-     flex-direction: column;
- }
-
- 
- .nav-area ul li:hover > ul{
-    display: flex;
+ /* .navarea{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    
 }
- .nav-area a{
-     text-transform: uppercase;
-     display: flex;
-     flex-direction: column;
+.navarea ul{
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
     
-     padding: 15px;
-     color:white;
-     text-decoration: none;
-     text-align: center;
-    transition: all 0.9s ease 0s;
- }
- .nav-area a:hover{
-     background-color: silver;
-     color:black;
- }
- .nav-area .dropdown li > a {
-     background-color: black;
-     color:#fff;
- }
+}
+.navarea ul li{
+    width: 14%;;
 
- .nav-area .drop-down li > a:hover{
+}
+.navarea ul li > ul{
+    display: none;
     flex-direction: column;
-    background-color: rgb(218, 18, 18);
+}
+.navarea ul li> ul li{
+    width: 100%;
+}
+.navarea ul li:hover>ul{
+    display: flex;
+}
+.navarea a{
+    text-transform: uppercase;
+    display: block;
+    background-color: transparent;
+    padding:15px;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.navarea a:hover{
+    background-color: #e8e8e8;
+    color:rgb(182, 95, 95);
+
+}
+
+.navarea.dropdown li > a{ 
+    background-color: #000;
     color:#fff;
 }
+.navarea .dropdown li > a:hover{
+    background-color: #e8e8e8; ;
+}
+.navarea.dropdown> a:after{
+content: '+';
+padding-left: 5px;
+}
 .text{
-width:100%;
-height:2rem;
-padding-top:0.5rem;
-border: 3px whitesmoke solid;
-background-color: transparent;
-margin-left: 1.6rem;
-font-style: italic;
+    width:60%;
+    height:2rem;
+    padding-top:0.5rem;
+    border: 3px whitesmoke solid;
+    background-color: transparent;
+    margin-left: 1.6rem;
+    font-style: italic;
+    
+    }
+    input::placeholder {
+        
+        color:white;
+       
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      
+        font-size: 1rem;
+    }
+@media(max-width:600px){
+    .navarea ul li{
+        width:100%;
+    }
+}
+
+*/
+.nav1{
+    height: 80px;
+    background-color: transparent;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    display: flex;
+  align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    position: relative;
+}
+.nav1 .menubtn i{
+color:white;
+font-size: 40px;
+
+cursor: pointer;
+display:none;
+}
+.nav1 .logo{
+    font-size: 33px;
+    color: cornsilk;
+    font-weight: 600;
+    margin-left: -80px;
+}
+.nav1 ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+.nav1 ul li{
+    margin: 0 50px;
+   
+}
+.nav1 ul li > ul{
+    display: none;
+    flex-direction: column;
+}
+.nav1 ul li> ul li{
+    position: relative;
+width: 100%;
+margin-left: -5px;
 
 }
-input::placeholder {
-    
-    color:white;
-   
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.nav1 ul li:hover > ul{
+    display: flex;
   
-    font-size: 1rem;
 }
- @media(max-width:700px){
-     .nav-area ul li{
-         width:100%;
-     }
- }
+.nav1 ul li a{
+    color:cornsilk;
+    text-decoration: none;
+    font-size: 18px;
+  
+   letter-spacing: 1px;
+    padding:8px 10px;
+    border-radius: 5px;
+   
+    transition:all 0.3s ease;
+}
+.nav1 ul li a:hover,.nav1 ul li a.active{
+    background-color: none;
+    color: rgb(0, 247, 255);
+}
+#click{
+    display: none;
+}
+#click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+
+.nav2{
+    width:100%;
+    height:80px;
+    background-color: transparent;
+    display: flex;
+    float: right;
+}
+.nav2 ul{
+    display: flex;
+    list-style-type: none;
+    
+}
+.nav2 ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 60px 100px;
+    
+
+}
+/*.nav2{
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+  align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    position: relative;
+  
+}
+.nav2 .logo{
+    font-size: 33px;
+    color: cornsilk;
+    font-weight: 600;
+    margin-left: -80px;
+}
+.nav2 ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+.nav2 ul li{
+    margin: 0 50px;
+   
+}
+.nav2 ul li a{
+    color:cornsilk;
+    text-decoration: none;
+    font-size: 18px;
+  
+   letter-spacing: 1px;
+    padding:8px 10px;
+    border-radius: 5px;
+   
+    transition:all 0.3s ease;
+}
+.nav2 ul li a:hover{
+    background-color: none;
+    color: rgb(0, 247, 255);
+}  */
+@media(max-width:940px){
+    .nav1 ul{
+        position: fixed;
+        top:80px;
+        left:-100%;
+        background-color: #111;
+        height:100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        
+    }
+    .main{
+        position: fixed;
+        top:0px;
+        left:0%;
+        background-color:transparent;
+        height:100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: -1;
+      
+    }
+    #click:checked ~ ul{
+        left:0% ;
+        
+        
+    } 
+   
+  
+    .nav1 ul li{
+        margin:40px 0;
+
+    }
+    .nav1 ul li a{
+        font-size: 20px;
+    }
+    .nav1 .menubtn{
+        margin-right: -20px;
+    }
+    .nav1 .menubtn i{
+        display: block;
+    }
+    .nav1 .logo{
+       
+        transform: scale(0.8);
+        
+    }
+    
+}
+
+/*
 .nav-area2{
     font-size: 1rem;
    
@@ -106,7 +289,7 @@ input::placeholder {
 }
  .nav-area2 ul {
     
-    /* justify-content: space-around; */
+    /* justify-content: space-around; 
      align-items: center;
      text-transform: uppercase;
      display: flex;

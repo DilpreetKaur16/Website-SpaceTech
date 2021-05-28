@@ -125,6 +125,8 @@ display:none;
     display: flex;
     list-style: none;
     text-transform: uppercase;
+    font-family:Ubuntu ;
+    font-weight: 900;
 }
 .nav1 ul li{
     margin: 0 50px;
@@ -515,9 +517,9 @@ flex-wrap: wrap;
     color: white;
     text-align: center;
     padding:10px;
-    font-family:Acme ;
+    font-family:Ubuntu;
  font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
 
    
 }
